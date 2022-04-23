@@ -18,7 +18,7 @@ const Clock = () => {
     hour = new Date().getHours();
     minute = new Date().getMinutes();
     seconds = new Date().getSeconds();
-    am = (hour>12)? (hour = hour-12, am ="PM") : hour ;
+    am = (hour>12)? (hour = hour-12, am ="PM") : am ;
     hour = (hour<10) ? `0${hour}`:hour;
     minute = (minute<10) ? `0${minute}`:minute;
     seconds = (seconds<10) ? `0${seconds}`:seconds;
